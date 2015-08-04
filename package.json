@@ -12,5 +12,11 @@
         "body-parser": "~1.13.1",
         "express": "~4.13.0",
         "http": "0.0.0"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "engines": {
+        "node": "0.10.28"
     }
 }
