@@ -10,7 +10,7 @@ var express = require('express'),
 
 app.use('/static', express.static('images'));
 
-port = 9095;
+app.set('port', (process.env.PORT || 9095));
 
 app.get('/', function (req, res) {
     var webmap, extents, extentValue, z, location, xy, requestOptions,
@@ -78,7 +78,7 @@ app.get('/', function (req, res) {
 
 });
 
-var server = app.listen(port, function () {
+var server = app.listen(app.get('port'), function () {
     var host = server.address().address;
     var port = server.address().port;
 
