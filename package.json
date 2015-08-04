@@ -1,0 +1,16 @@
+{
+    "name": "static-map-service",
+    "version": "0.0.1",
+    "description": "Service that allows users to create static maps using ArcGIS API",
+    "author": {
+        "name": "Raul Jimenez Ortega",
+        "email": "raul.jimenez@esri.es",
+        "url": "http://desarrolladores.esri.es"
+    },
+    "dependencies": {
+        "arc-node": "0.2.7",
+        "body-parser": "~1.13.1",
+        "express": "~4.13.0",
+        "http": "0.0.0"
+    }
+}
