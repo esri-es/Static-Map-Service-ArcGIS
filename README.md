@@ -46,6 +46,8 @@ Example:
 ```
 &markers=color:purple|40,-3&markers=color:orange|40,-3|xoffset:30|yoffset:30
 ```
+# Related project
+You can find a custom Javascript class inside the repo [Static-Maps-API-ArcGIS](https://github.com/esri-es/Static-Maps-API-ArcGIS) that you can use where using the [ArcGIS Javascript API](js.arcgis.com). This class provides you more control in order to add a preload image until the service has returned the static map
 
 # Testing environment
 You can test it using the [testing instance at Heroku](https://staticmapservice.herokuapp.com/?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=streets&markers=color:purple%7C40.702147,-74.015794&markers=color:orange%7C40.711614,-74.012318&markers=color:orange%7C40.718217,-73.998284)
