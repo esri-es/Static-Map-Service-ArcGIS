@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 
 var parseCenter = function(val){
     var tmp = val.split(",");
-    //debugger
+
     if(tmp.length == 2){
         if(!isNaN(tmp[0]) && !isNaN(tmp[1])){
             return [tmp[1], tmp[0]]
