@@ -9,9 +9,8 @@
     },
     "dependencies": {
         "arc-node": "0.2.7",
-        "body-parser": "~1.13.1",
         "express": "~4.13.0",
-        "http": "0.0.0"
+        "arcgis-json-objects": "*"
     },
     "scripts": {
         "start": "node index.js"
