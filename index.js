@@ -19,10 +19,14 @@ app.get('/', function (req, res) {
         service.findAddressCandidates({
             address: req.query.center
         }).then(function(response){
-            location = response.candidates[0].location;
-            xy = [location.x, location.y];
+            if(response.candidates.length == 0){
+              res.redirect("/static/error.svg");
+            }else{
+              location = response.candidates[0].location;
+              xy = [location.x, location.y];
 
-            requestImage(req.query, xy, res);
+              requestImage(req.query, xy, res);
+            }
         });
     }else{
         xy = lngLatToXY(center[0],center[1]);
