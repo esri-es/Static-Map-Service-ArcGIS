@@ -1,3 +1,7 @@
+Documentation: https://developers.arcgis.com/rest/services-reference/enterprise/exportwebmap-specification.htm
+
+Example:
+
 ```json
 {
 	"mapOptions": {
